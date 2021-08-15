@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "sistema-cai-bolivia": {
+      "hosting": {
+        "sistema-cai-bolivia": [
+          "sistema-cai-bolivia"
+        ]
+      }
+    }
+  }
+}

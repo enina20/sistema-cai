@@ -1,0 +1,58 @@
+<div class="container mt-5 mb-5">
+  <h2>Cursos y programas</h2>
+
+  <div class="row mt-5">
+    <div class="col-sm-8">
+      <h4>Programas</h4>
+      <div class="row row-cols-1 row-cols-md-3 mt-3" >
+        <div *ngFor="let curso of cursos" class="col mb-3" >
+          <div class="card h-100">
+            <img src="assets/images/logo.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{curso.nombre}}</h5>
+              <p class="card-text"></p>
+              <a class="card-link">editar</a>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">12121212</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-sm-4">
+      <h4>Informacion del curso</h4>
+
+      <form [formGroup]="formularioCurso" class="mb-2">
+        <div class="form-group">
+          <label for="">Nombre del curso</label>
+          <input formControlName="nombre" class="form-control" type="text">
+        </div>
+
+        <div class="form-group">
+          <label for="">Precio</label>
+          <input formControlName="precio" class="form-control" type="text">
+        </div>
+
+        <div class="form-group">
+          <label for="">Duracion</label>
+          <input formControlName="duracion" class="form-control" type="text">
+        </div>
+
+        <div class="form-group">
+          <label for="">Responsable</label>
+          <input formControlName="responsable" class="form-control" type="text">
+        </div>
+      </form>
+      <button (click)="agregarCurso()"
+              type="button" class="btn btn-primary m-1">Agregar</button>
+      <button (click)="editarCurso()"
+              type="button" class="btn btn-warning m-1">Editar</button>
+      <button (click)="eliminarCurso()"
+              type="button" class="btn btn-danger m-1">Eliminar</button>
+    </div>
+  </div>
+
+</div>

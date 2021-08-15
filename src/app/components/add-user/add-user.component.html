@@ -1,0 +1,186 @@
+
+
+<div class="container mt-5">
+  <form [formGroup]="formularioEstudiante" action="">
+
+    <div class="row mb-3">
+      <h2>I. DATOS DEL TITULAR</h2>
+      <div class="col-sm-3">
+        <div class="form-group">
+          <label for="">Nombres</label>
+          <input type="text" class="form-control"
+          formControlName="nombre" placeholder="Agregue el nombre">
+          <!-- <div *ngIf="formularioEstudiante.controls['nombre'].invalid && formularioEstudiante.controls['nombre'].dirty" class="alert alert-danger" role="alert">
+            <span *ngIf="formularioEstudiante.controls['nombre'].errors.required">Nombre es requerido</span>
+          </div> -->
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="form-group">
+          <label for="">Apellidos</label>
+          <input type="text" class="form-control"
+          formControlName="apellido" placeholder="Agregue el apellido">
+          <!-- <div *ngIf="formularioEstudiante.controls['apellido'].invalid && formularioEstudiante.controls['apellido'].dirty" class="alert alert-danger" role="alert">
+            <span *ngIf="formularioEstudiante.controls['apellido'].errors.required">Nombre es requerido</span>
+          </div> -->
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="form-group">
+          <label for="">Fecha de registro</label>
+          <input type="date" class="form-control"
+          formControlName="fechaNacimiento" placeholder="Agregue la fecha de nacimiento">
+          <!-- <div *ngIf="formularioEstudiante.controls['fechaNacimiento'].invalid && formularioEstudiante.controls['fechaNacimiento'].dirty" class="alert alert-danger" role="alert">
+            <span *ngIf="formularioEstudiante.controls['fechaNacimiento'].errors.required">Nombre es requerido</span>
+          </div> -->
+        </div>
+      </div>
+
+
+      <div class="col-sm-3">
+        <div class="form-group">
+          <label for="">Numero de contrato</label>
+          <input type="text" class="form-control"
+          formControlName="celular" placeholder="Agregue el telefono celular">
+          <!-- <div *ngIf="formularioEstudiante.controls['celular'].invalid && formularioEstudiante.controls['celular'].dirty" class="alert alert-danger" role="alert">
+            <span *ngIf="formularioEstudiante.controls['celular'].errors.required">Nombre es requerido</span>
+          </div> -->
+        </div>
+      </div>
+
+    </div>
+    <div class="row mb-3">
+
+      <div class="col-sm-3">
+        <div class="form-group">
+          <label for="">Celular</label>
+          <input type="text" class="form-control"
+          formControlName="nombre" placeholder="Agregue el nombre">
+          <!-- <div *ngIf="formularioEstudiante.controls['nombre'].invalid && formularioEstudiante.controls['nombre'].dirty" class="alert alert-danger" role="alert">
+            <span *ngIf="formularioEstudiante.controls['nombre'].errors.required">Nombre es requerido</span>
+          </div> -->
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="form-group">
+          <label for="">Carnet de Identidad</label>
+          <input type="text" class="form-control"
+          formControlName="carnet" placeholder="Agregue el carnet de identidad">
+          <!-- <div *ngIf="formularioEstudiante.controls['carnet'].invalid && formularioEstudiante.controls['carnet'].dirty" class="alert alert-danger" role="alert">
+            <span *ngIf="formularioEstudiante.controls['carnet'].errors.required">Nombre es requerido</span>
+          </div> -->
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="form-group">
+          <label for="">Telefono de domicilio</label>
+          <input type="text" class="form-control"
+          formControlName="apellido" placeholder="Agregue el apellido">
+          <!-- <div *ngIf="formularioEstudiante.controls['apellido'].invalid && formularioEstudiante.controls['apellido'].dirty" class="alert alert-danger" role="alert">
+            <span *ngIf="formularioEstudiante.controls['apellido'].errors.required">Nombre es requerido</span>
+          </div> -->
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="form-group">
+          <label for="">Telefono de oficina</label>
+          <input type="text" class="form-control"
+          formControlName="carnet" placeholder="Agregue el carnet de identidad">
+          <!-- <div *ngIf="formularioEstudiante.controls['carnet'].invalid && formularioEstudiante.controls['carnet'].dirty" class="alert alert-danger" role="alert">
+            <span *ngIf="formularioEstudiante.controls['carnet'].errors.required">Nombre es requerido</span>
+          </div> -->
+        </div>
+      </div>
+
+
+    </div>
+
+
+    <div class="row mb-3">
+      <div class="col-sm-3">
+        <div class="form-group">
+          <label for="">Edad</label>
+          <input type="text" class="form-control"
+          formControlName="celular" placeholder="Agregue el telefono celular">
+          <!-- <div *ngIf="formularioEstudiante.controls['celular'].invalid && formularioEstudiante.controls['celular'].dirty" class="alert alert-danger" role="alert">
+            <span *ngIf="formularioEstudiante.controls['celular'].errors.required">Nombre es requerido</span>
+          </div> -->
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="form-group">
+          <label for="">Ocupacion</label>
+          <input type="text" class="form-control"
+          formControlName="celular" placeholder="Agregue el telefono celular">
+          <!-- <div *ngIf="formularioEstudiante.controls['celular'].invalid && formularioEstudiante.controls['celular'].dirty" class="alert alert-danger" role="alert">
+            <span *ngIf="formularioEstudiante.controls['celular'].errors.required">Nombre es requerido</span>
+          </div> -->
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="form-group">
+          <label for="">Direccion de domicilio</label>
+          <input type="text" class="form-control"
+          formControlName="celular" placeholder="Agregue el telefono celular">
+          <!-- <div *ngIf="formularioEstudiante.controls['celular'].invalid && formularioEstudiante.controls['celular'].dirty" class="alert alert-danger" role="alert">
+            <span *ngIf="formularioEstudiante.controls['celular'].errors.required">Nombre es requerido</span>
+          </div> -->
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="form-group">
+          <label for="">Direccion de oficina</label>
+          <input type="text" class="form-control"
+          formControlName="correo" placeholder="Agregue el correo electronico">
+          <!-- <div *ngIf="formularioEstudiante.controls['correo'].invalid && formularioEstudiante.controls['correo'].dirty" class="alert alert-danger" role="alert">
+            <span *ngIf="formularioEstudiante.controls['correo'].errors.required">Nombre es requerido</span>
+            <span *ngIf="formularioEstudiante.controls['correo'].errors.email">Nombre es requerido</span>
+          </div> -->
+        </div>
+      </div>
+
+
+    </div>
+
+    <!-- <div class="row mb-3">
+      <div class="col-sm-12 mb-3">
+        <div class="form-group">
+          <label for="">Imagen del alumno</label>
+          <input type="file"
+                 (change)="subirImagenEstudiante($event)"
+                 class="form-control"
+                 formControlName="imgUrl" placeholder="Agregue la imagen">
+          <div *ngIf="formularioEstudiante.controls['imgUrl'].invalid && formularioEstudiante.controls['imgUrl'].dirty" class="alert alert-danger" role="alert">
+            <span *ngIf="formularioEstudiante.controls['imgUrl'].errors.required">Nombre es requerido</span>
+          </div>
+        </div>
+      </div> -->
+
+
+      <!-- <div class="progress">
+        <div class="progress-bar progress-bar-striped progress-bar-animated"
+        role="progressbar" aria-valuenow="75"
+        aria-valuemin="0"
+        aria-valuemax="100"
+        style="width: 50%">
+          {{porcentajeSubida}}%
+        </div>
+      </div>
+    </div> -->
+    <br><br>
+
+    <button *ngIf="!esEditable"
+            [disabled] = "formularioEstudiante.invalid"
+            (click)="agregarEstudiante()"
+            class="btn btn-primary">Registrar estudiante</button>
+
+    <button *ngIf="esEditable"
+            [disabled] = "formularioEstudiante.invalid"
+            (click)="editarEstudiante()"
+            class="btn btn-primary">Editar estudiante</button>
+  </form>
+</div>

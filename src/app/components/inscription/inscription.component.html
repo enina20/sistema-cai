@@ -1,0 +1,85 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="estudiantes">
+        <div class="form-group" *ngIf="!nombreEstudiante">
+          <label for="">Estudiantes Registrados</label>
+          <input  class="form-control" type="text"
+                  (keyup)="buscarEstudiante($any($event).target.value)"
+                  placeholder="Buscar estudiante">
+        </div>
+
+        <div class="form-group" *ngIf="nombreEstudiante">
+          <label for="">Estudiantes Registrados</label>
+          <div class="row">
+            <div class="col-sm-9">
+              <input disabled type="text" class="form-control"
+                      [(ngModel)]="nombreEstudiante">
+            </div>
+            <div class="col-sm-1">
+              <button (click)="cancelarEstudiante()"
+               class="btn btn-danger">Cancelar</button>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="list-group">
+          <div *ngFor="let estudiante of estudiantes" >
+            <a *ngIf="estudiante.visible"
+              (click)="seleccionarEstudiante(estudiante)"
+              class="list-group-item list-group-item-action">
+              {{estudiante.nombre}} {{estudiante.apellido}}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <h4>Inscripcion de estudiantes</h4>
+
+      <form class="mb-2">
+        <div class="form-group">
+          <label for="">Nombre del estudiante</label>
+          <input formControlName="nombre" class="form-control" type="text">
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="">Curso o programa</label>
+          <select  class="form-control"  name="" id="">
+            <option value="null">Elija un programa</option>
+            <option value="">Programa Gauss Newton</option>
+            <option value="">Programa de lectura comprensiva</option>
+            <option value="">Gabinete psicopedagogico</option>
+          </select>
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="">Fecha de inscripcion</label>
+          <input type="date" class="form-control"
+          formControlName="fechaNacimiento" placeholder="Agregue la fecha de nacimiento">
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="">Plan de pago</label>
+          <input formControlName="responsable" class="form-control" type="text">
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="">Pago inicial</label>
+          <input formControlName="responsable" class="form-control" type="text">
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="">Fecha siguiente pago</label>
+          <input formControlName="responsable" class="form-control" type="text">
+        </div>
+      </form>
+      <br>
+      <button
+              type="button" class="btn btn-primary m-1">Inscribir</button>
+      <button
+              type="button" class="btn btn-danger m-1">Cancelar</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,41 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">CAI-Bolivia</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link active" routerLink="/estudiantes-inscritos">Estudiantes inscritos
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle"
+             data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Estudiantes</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" routerLink="/agregar-estudiante">Registrar</a>
+            <a class="dropdown-item" routerLink="/listar-estudiantes">Listar estudiantes</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/cursos">Programas-cursos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/listar-docentes">Docentes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/listar-personal">Personal</a>
+        </li>
+
+      </ul>
+      <form class="d-flex">
+        <button (click)="logout()" class="btn btn-secondary my-2 my-sm-0" type="submit">Salir</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+
+
